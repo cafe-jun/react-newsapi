@@ -2,10 +2,10 @@ import React, { useState, useCallback } from 'react';
 //import NewsList from './components/NewsList';
 //import Categories from './components/Categories';
 
-import { Router } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import NewsPage from './pages/NewsPage';
 
-function App() {
+const App = () => {
   //const [category, setCategory] = useState('all');
   //const onSelect = useCallback((category) => {
   //  setCategory(category);
@@ -34,7 +34,7 @@ function App() {
       <NewsList category={category} />
     </>
   */
-  return <Router path="/:category?" component={NewsPage} />;
-}
+  return <Route path="/:category?" component={NewsPage} />;
+};
 
 export default App;
